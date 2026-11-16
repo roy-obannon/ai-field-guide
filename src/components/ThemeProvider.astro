@@ -1,0 +1,12 @@
+---
+// Always use the light colour scheme (Flexoki light), whatever the
+// visitor's system setting or a theme they picked before.
+---
+
+{/* Inlined so the page never flashes in dark mode first. */}
+<script is:inline>
+	document.documentElement.dataset.theme = 'light';
+	try {
+		localStorage.removeItem('starlight-theme');
+	} catch {}
+</script>

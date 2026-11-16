@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import mermaid from 'astro-mermaid';
 import starlightLinksValidator from 'starlight-links-validator';
+import starlightThemeFlexoki from 'starlight-theme-flexoki';
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,7 +11,7 @@ export default defineConfig({
 	base: '/ai-field-guide',
 	integrations: [
 		// Must come before Starlight so it can process Mermaid code blocks.
-		mermaid({ autoTheme: true }),
+		mermaid({ theme: 'neutral', autoTheme: false }),
 		starlight({
 			title: 'AI Field Guide',
 			description:
@@ -22,7 +23,12 @@ export default defineConfig({
 				baseUrl: 'https://github.com/roy-obannon/ai-field-guide/edit/main/',
 			},
 			lastUpdated: true,
-			plugins: [starlightLinksValidator()],
+			components: {
+				// Light-only site: force Flexoki light and hide the theme switcher.
+				ThemeProvider: './src/components/ThemeProvider.astro',
+				ThemeSelect: './src/components/ThemeSelect.astro',
+			},
+			plugins: [starlightThemeFlexoki(), starlightLinksValidator()],
 			sidebar: [
 				{ label: 'Course', items: [{ autogenerate: { directory: 'modules' } }] },
 				{ label: 'Exercises', items: [{ autogenerate: { directory: 'exercises' } }] },
