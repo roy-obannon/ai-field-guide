@@ -1,0 +1,56 @@
+---
+title: Home
+description: A living curriculum and second brain for understanding, building with, and teaching modern AI.
+template: splash
+hero:
+  title: AI Field Guide
+  tagline: A working notebook for learning AI deeply enough to explain it, teach it, and hold well-argued opinions about where it's going.
+  actions:
+    - text: Start with Module 0
+      link: /ai-field-guide/modules/00-context-is-everything/
+      icon: right-arrow
+    - text: Open questions
+      link: /ai-field-guide/open-questions/
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+## Two ways to read it
+
+<CardGrid>
+	<Card title="The course" icon="open-book">
+		Ordered **modules** in the sidebar. Read them top to bottom. Each builds on Module 0's single idea.
+	</Card>
+	<Card title="The concept web" icon="puzzle">
+		Short **concept** notes, one idea each, linked to each other. Follow links sideways, or press <kbd>/</kbd> to search.
+	</Card>
+</CardGrid>
+
+## Curriculum
+
+| # | Module | Core question | Status |
+|---|---|---|---|
+| 0 | [Context is everything](/ai-field-guide/modules/00-context-is-everything/) | What is the one idea everything else builds on? | ✅ Written |
+| 1 | [How LLMs actually work](/ai-field-guide/modules/01-how-llms-work/) | Tokens, attention, training, reasoning, hallucination | ✅ Written · teach-back open |
+| 2 | Context engineering | How do you manage the window as a scarce resource? | ⏳ |
+| 3 | Rules vs. memory vs. skills vs. tools | What loads always, what on demand, and who decides? | ⏳ (preview in Module 0) |
+| 4 | Model selection | Capability, cost, latency, effort; routing; evals | ⏳ |
+| 5 | Agents | Workflows vs. agents and the standard patterns | ⏳ |
+| 6 | Multi-agent systems | When does splitting the work help, and when does it hurt? | ⏳ |
+| 7 | RAG → adaptive RAG | Retrieval done well, and systems that decide when to retrieve | ⏳ |
+| 8 | Evals & reliability | What separates demos from products? | ⏳ |
+| 9 | The frontier | What's unsolved, and what's next? | ⏳ |
+
+## The learning loop
+
+1. **Explain**: the mechanism, not just the vocabulary.
+2. **Teach back**: write it in your own words, then get it critiqued.
+3. **Scenario drills**: design a real system and defend the choices.
+4. **Debate**: argue a contested question.
+5. **Sort**: mark each idea settled or contested. Contested concepts carry a badge in the sidebar.
+
+<CardGrid>
+	<LinkCard title="Exercises" description="Teach-backs, drills, and debates, with answers and critiques." href="/ai-field-guide/exercises/" />
+	<LinkCard title="Open questions" description="Evolving opinions and predictions. The most important page here." href="/ai-field-guide/open-questions/" />
+</CardGrid>
