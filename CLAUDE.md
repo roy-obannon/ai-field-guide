@@ -69,6 +69,14 @@ These rules apply to everything written for this site.
 - A note ends with a period. When the note ends with a quoted title, the period goes inside the closing quotation mark (US style), so nothing follows the link.
 
 - When quoting one section of a long source, link to that section's anchor.
+- Prefer primary sources: official documentation, papers, and the original author's own writing. Among those, prefer open-source projects (such as Hugging Face) and independent experts (such as Simon Willison) over AI vendors. Use a blog or a vendor article only when no primary source covers the point.
+- Do not cite OpenAI or Sam Altman. When OpenAI's terminology has to be mentioned, describe it without citing them.
+- A web page with no publication date gets an access date instead ("accessed November 17, 2026"). Set the name of a website in roman type, without italics or quotation marks (*DataHub* is italic because it is a blog; "Claude Platform Docs" is not).
+- To cite several sources in one note, separate them with semicolons. A short comment may follow the citations.
+
+  ```md
+  [^1]: Hugging Face, ["Chat Templates,"](https://example.com/a) Transformers Documentation, accessed November 17, 2026; Anthropic, ["Prompting Best Practices,"](https://example.com/b) Claude Platform Docs, accessed November 17, 2026. The Hugging Face guide shows a system prompt converted into ordinary tokens.
+  ```
 - Write footnote definitions at the end of the file, with no heading. The build moves them to the end of the page under an automatic "Sources" heading and omits the "↩" return links.
 
 ### End-of-page sections
