@@ -1,9 +1,9 @@
 ---
-title: "Progressive disclosure"
+title: "Progressive Disclosure"
 description: "Keep a cheap pointer in context; load the expensive content only when it's needed."
 ---
 
-A UI design principle repurposed for [Context engineering](/ai-field-guide/concepts/context-engineering/).
+A UI design principle repurposed for [Context Engineering](/ai-field-guide/concepts/context-engineering/).
 
 | Where it shows up | Cheap pointer (always loaded) | Expensive content (on demand) |
 |---|---|---|
@@ -12,8 +12,8 @@ A UI design principle repurposed for [Context engineering](/ai-field-guide/conce
 | [Tools and MCP](/ai-field-guide/concepts/tools-and-mcp/) (tool search) | Tool names | Full schemas |
 | [RAG](/ai-field-guide/concepts/rag/) | A retrieval tool | The retrieved passages |
 
-**Why it works:** it beats the [Context window](/ai-field-guide/concepts/context-window/) tradeoff by making most content cost almost nothing until it's relevant.
+**Why it works:** it beats the [Context Window](/ai-field-guide/concepts/context-window/) tradeoff by making most content cost almost nothing until it's relevant.
 
 **Where it fails:** the pointer is all the model sees, so a vague description means the content never gets loaded.
 
-Strong candidate for a standard principle. See [Open questions](/ai-field-guide/open-questions/).
+Strong candidate for a standard principle. See [Open Questions](/ai-field-guide/open-questions/).

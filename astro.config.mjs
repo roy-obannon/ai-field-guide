@@ -32,7 +32,7 @@ export default defineConfig({
 			sidebar: [
 				{ label: 'Course', items: [{ autogenerate: { directory: 'modules' } }] },
 				{ label: 'Exercises', items: [{ autogenerate: { directory: 'exercises' } }] },
-				{ label: 'Open questions', link: '/open-questions/' },
+				{ label: 'Open Questions', link: '/open-questions/' },
 				{
 					label: 'Concepts',
 					collapsed: true,

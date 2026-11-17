@@ -1,13 +1,13 @@
 ---
-title: "Test-time compute"
+title: "Test-Time Compute"
 description: "Spending more computation at inference, mainly by letting the model think before answering, to get better answers."
 ---
 
 Each token gets a fixed amount of computation. A reasoning model writes thinking tokens first, which gives it:
-- **more forward passes** before it commits ([Autoregressive generation](/ai-field-guide/concepts/autoregressive-generation/)),
+- **more forward passes** before it commits ([Autoregressive Generation](/ai-field-guide/concepts/autoregressive-generation/)),
 - **a scratchpad** it can attend back to, so it can try an approach, notice an error, and backtrack.
 
-Trained via [RL with verifiable rewards](/ai-field-guide/concepts/rl-with-verifiable-rewards/).
+Trained via [RL with Verifiable Rewards](/ai-field-guide/concepts/rl-with-verifiable-rewards/).
 
 ## Two scaling knobs
 | Knob | What you pay for |

@@ -1,5 +1,5 @@
 ---
-title: "Sampling and temperature"
+title: "Sampling and Temperature"
 description: "How a token is chosen from the model's probability distribution, and the knob that controls randomness."
 ---
 
@@ -14,4 +14,4 @@ Many reasoning models fix these values, because training tuned them for a specif
 Even at temperature 0, outputs aren't always perfectly reproducible in practice (batching and hardware nondeterminism). "Deterministic" is the wrong promise to make.
 :::
 
-Related: [Autoregressive generation](/ai-field-guide/concepts/autoregressive-generation/).
+Related: [Autoregressive Generation](/ai-field-guide/concepts/autoregressive-generation/).

@@ -3,9 +3,9 @@ title: "Memory"
 description: "Information an AI system persists across sessions and re-inserts into context when relevant."
 ---
 
-The model has no memory of its own ([Module 0: Context is everything](/ai-field-guide/modules/00-context-is-everything/)). "Memory" is a [Context engineering](/ai-field-guide/concepts/context-engineering/) feature: text gets **written** somewhere and **re-inserted** later.
+The model has no memory of its own ([Module 0: Context Is Everything](/ai-field-guide/modules/00-context-is-everything/)). "Memory" is a [Context Engineering](/ai-field-guide/concepts/context-engineering/) feature: text gets **written** somewhere and **re-inserted** later.
 
-**Typical design:** a short always-loaded index plus detail files loaded when relevant ([Progressive disclosure](/ai-field-guide/concepts/progressive-disclosure/)).
+**Typical design:** a short always-loaded index plus detail files loaded when relevant ([Progressive Disclosure](/ai-field-guide/concepts/progressive-disclosure/)).
 
 ## Design questions
 - **Write policy**: who decides what's worth saving? Saving too much creates noise; too little and it forgets.

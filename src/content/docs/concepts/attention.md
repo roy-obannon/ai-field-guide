@@ -10,7 +10,7 @@ In each transformer layer, every token computes how relevant every earlier token
 
 ## Practical consequences
 - **Quadratic cost**: naive attention compares every pair of tokens, so cost grows with the square of length. This is why long context is expensive and slow.
-- **Cacheable**: earlier tokens' intermediate values (keys and values) can be stored, which gives the [KV cache](/ai-field-guide/concepts/kv-cache/) and [Prompt caching](/ai-field-guide/concepts/prompt-caching/).
-- **Finite focus**: attention is spread across everything present, so irrelevant material dilutes it. See [Context rot](/ai-field-guide/concepts/context-rot/).
+- **Cacheable**: earlier tokens' intermediate values (keys and values) can be stored, which gives the [KV Cache](/ai-field-guide/concepts/kv-cache/) and [Prompt Caching](/ai-field-guide/concepts/prompt-caching/).
+- **Finite focus**: attention is spread across everything present, so irrelevant material dilutes it. See [Context Rot](/ai-field-guide/concepts/context-rot/).
 
-Related: [Context window](/ai-field-guide/concepts/context-window/), [Module 1: How LLMs actually work](/ai-field-guide/modules/01-how-llms-work/).
+Related: [Context Window](/ai-field-guide/concepts/context-window/), [Module 1: How LLMs Actually Work](/ai-field-guide/modules/01-how-llms-work/).

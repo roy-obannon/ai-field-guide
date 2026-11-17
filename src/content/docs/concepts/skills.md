@@ -5,7 +5,7 @@ description: "Packaged procedures whose short description is always visible and 
 
 A skill is a folder of instructions (and optionally scripts or reference files). Only its **name and description** sit in context; the model loads the full body when a task matches.
 
-**Why:** you can install dozens of detailed procedures ("how to build a .pptx," "our deploy checklist") at nearly zero context cost. See [Progressive disclosure](/ai-field-guide/concepts/progressive-disclosure/).
+**Why:** you can install dozens of detailed procedures ("how to build a .pptx," "our deploy checklist") at nearly zero context cost. See [Progressive Disclosure](/ai-field-guide/concepts/progressive-disclosure/).
 
 ## Failure modes
 - **Misfiring**: the description is the only trigger, so vague descriptions cause misses or false triggers.

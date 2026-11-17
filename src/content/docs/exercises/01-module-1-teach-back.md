@@ -1,11 +1,11 @@
 ---
-title: "Exercise 1: Module 1 teach-back"
+title: "Exercise 1: Module 1 Teach-Back"
 description: Four questions on how LLMs work, from memory and hallucination to where capability grows fastest.
 sidebar:
   order: 2
 ---
 
-**Module:** [Module 1: How LLMs actually work](/ai-field-guide/modules/01-how-llms-work/)
+**Module:** [Module 1: How LLMs Actually Work](/ai-field-guide/modules/01-how-llms-work/)
 
 Answer in your own words, without looking back. Short is fine.
 

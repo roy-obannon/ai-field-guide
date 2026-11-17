@@ -1,0 +1,67 @@
+# AI Field Guide
+
+A personal, public learning site about AI engineering, built with Astro Starlight and the Flexoki theme (light mode only). Pages live in `src/content/docs/`:
+
+- `modules/`: the ordered course
+- `concepts/`: atomic notes, one idea each, linked densely to each other
+- `exercises/`: teach-backs, drills, and debates, with the owner's answers and critiques
+- `open-questions.md`: the owner's evolving opinions, revised with dates
+
+Internal links use the base path: `/ai-field-guide/concepts/<slug>/`. Run `npm run build` before committing; it fails on any broken internal link. Mark a contested concept with a `sidebar.badge` of `Contested` (variant `caution`). Commit and push only when the owner approves.
+
+## Working with the owner's writing
+
+The owner is practicing their writing. When they edit pages, review their changes against the style guide below and explain each finding with a `file:line` reference. Do not rewrite their prose unless they ask.
+
+## Style guide
+
+These rules apply to everything written for this site.
+
+### Voice
+
+- Write in the owner's voice: professional and expert, but familiar and personal. The site is a personal undertaking, and readers (starting with the owner) should feel at home in it.
+- Minimize passive voice. Use it only when the actor is unknown, unimportant, or obvious and the thing acted upon is the real subject.
+
+### Capitalization
+
+- Use title case for the titles of things: page titles, article and book titles, and planned module names. Follow Chicago style: capitalize major words, including short verbs such as "Is"; lowercase articles, coordinating conjunctions, and prepositions ("a," "and," "in," "of," "vs."); capitalize both parts of a hyphenated term ("Test-Time Compute").
+- Whenever text uses a title verbatim, including link text and sidebar labels, use the title-cased form. A term used as an ordinary noun in a sentence ("the model's context window") is not a title and stays lowercase.
+- Use sentence case for headings.
+
+### Punctuation and symbols
+
+- Use the Oxford comma.
+- Use colons rather than em dashes.
+- Arrows (→), "vs.", "e.g.", and "i.e." are fine.
+- Type an em dash as `—` (or `---`). Never use `--`: the site renders it as an en dash.
+
+### Contractions
+
+- Do not use contractions.
+
+### Emphasis
+
+- Use bold only for a critical fact, or for a term at the point where it is defined.
+
+### Quotations and key ideas
+
+- Use a Markdown blockquote (`> `) for a quotation from a source, followed by a footnote citation.
+- Use a Starlight aside (`:::note[Title]` … `:::`) for a key idea that is not intuitive or that the reader must keep in mind.
+
+### Anecdotes
+
+- Anecdotes and colloquial examples are the exception to the professional register: em dashes and contractions are welcome there.
+
+### Citations
+
+- Cite sources with footnotes. Each footnote gives the author, the title (in quotation marks, linked to the source), the publication (in italics), and the publication date:
+
+  ```md
+  [^1]: Lakshay Nasa, ["Context Engineering vs. Prompt Engineering,"](https://example.com/article) *DataHub*, April 20, 2026.
+  ```
+
+- When quoting one section of a long source, link to that section's anchor.
+
+### Spelling
+
+- Use US spelling.

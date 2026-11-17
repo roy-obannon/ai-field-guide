@@ -10,9 +10,9 @@ description: "Fluent, confident output that is false. A consequence of plausibil
 
 ## Mitigations
 - Grounding: [RAG](/ai-field-guide/concepts/rag/), tools, search, and required citations.
-- Training for calibration and abstention ([Post-training](/ai-field-guide/concepts/post-training/)).
+- Training for calibration and abstention ([Post-Training](/ai-field-guide/concepts/post-training/)).
 - Verification: tests, a checker model, human review on high-stakes outputs.
 
 :::note[Open]
-Can it be eliminated or only engineered around? See [Open questions](/ai-field-guide/open-questions/).
+Can it be eliminated or only engineered around? See [Open Questions](/ai-field-guide/open-questions/).
 :::

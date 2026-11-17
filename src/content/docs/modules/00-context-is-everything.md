@@ -1,8 +1,8 @@
 ---
-title: "Module 0: Context is everything"
+title: "Module 0: Context Is Everything"
 description: The one idea the whole curriculum rests on. A model knows only its weights and its context window.
 sidebar:
-  label: "0 · Context is everything"
+  label: "0 · Context Is Everything"
   order: 0
 ---
 
@@ -12,7 +12,7 @@ sidebar:
 A model has **no memory between calls** and exactly two sources of knowledge: its **weights**, frozen at training, and its **[context window](/ai-field-guide/concepts/context-window/)**, whatever is in front of it right now.
 :::
 
-Every "memory," "skill," "rule," "RAG pipeline," and "agent" is a strategy for putting **the right tokens into that window at the right time**, while keeping out the ones that cost money or distract the model. This discipline is called [Context engineering](/ai-field-guide/concepts/context-engineering/).
+Every "memory," "skill," "rule," "RAG pipeline," and "agent" is a strategy for putting **the right tokens into that window at the right time**, while keeping out the ones that cost money or distract the model. This discipline is called [Context Engineering](/ai-field-guide/concepts/context-engineering/).
 
 ## The four design questions
 
@@ -21,7 +21,7 @@ For any piece of information an AI system might use, ask:
 1. **What** gets into the window?
 2. **When**: always, on a trigger, or on request?
 3. **Who decides**: the developer, the user, a retrieval system, or the model itself?
-4. **What does it cost**: tokens, latency, diluted attention ([Context rot](/ai-field-guide/concepts/context-rot/)), and room for prompt injection?
+4. **What does it cost**: tokens, latency, diluted attention ([Context Rot](/ai-field-guide/concepts/context-rot/)), and room for prompt injection?
 
 ## Applied: rules vs. memory vs. skills vs. tools vs. RAG
 
@@ -35,7 +35,7 @@ For any piece of information an AI system might use, ask:
 
 ## The pattern underneath: progressive disclosure
 
-Skills, memory indexes, and tool search all share one structure: keep a **cheap pointer** in context and load the **expensive content** only when needed. See [Progressive disclosure](/ai-field-guide/concepts/progressive-disclosure/). It's one of the strongest candidates for a principle worth standardizing on.
+Skills, memory indexes, and tool search all share one structure: keep a **cheap pointer** in context and load the **expensive content** only when needed. See [Progressive Disclosure](/ai-field-guide/concepts/progressive-disclosure/). It's one of the strongest candidates for a principle worth standardizing on.
 
 :::note[Live specimen]
 When Claude saved my learning goal to memory, it wrote **one fact to one file** plus a **one-line pointer in an index**. The index loads every session; the file loads only when relevant. That's progressive disclosure applied to memory.
@@ -43,8 +43,8 @@ When Claude saved my learning goal to memory, it wrote **one fact to one file** 
 
 ## Why it's true mechanically
 
-Covered in [Module 1: How LLMs actually work](/ai-field-guide/modules/01-how-llms-work/): weights don't change during a conversation, [Attention](/ai-field-guide/concepts/attention/) spreads across everything in the window, and long contexts degrade recall. So the window is scarce in money, in latency, *and* in focus.
+Covered in [Module 1: How LLMs Actually Work](/ai-field-guide/modules/01-how-llms-work/): weights don't change during a conversation, [Attention](/ai-field-guide/concepts/attention/) spreads across everything in the window, and long contexts degrade recall. So the window is scarce in money, in latency, *and* in focus.
 
 ## Exercise
 
-→ [Exercise 0: Why not put everything in the system prompt?](/ai-field-guide/exercises/00-system-prompt/)
+→ [Exercise 0: Why Not Put Everything in the System Prompt?](/ai-field-guide/exercises/00-system-prompt/)

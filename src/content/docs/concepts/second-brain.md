@@ -1,5 +1,5 @@
 ---
-title: "Second brain"
+title: "Second Brain"
 description: "A personal knowledge system of small, densely linked notes, and a human analogue of RAG."
 ---
 
@@ -17,7 +17,7 @@ Descended from Niklas Luhmann's **Zettelkasten** and popularized as "building a 
 | Atomic notes | Well-sized chunks ([RAG](/ai-field-guide/concepts/rag/)) |
 | Links between notes | Knowledge graph edges |
 | Backlinks / graph traversal | Retrieval by relationship rather than keyword |
-| Index notes | [Progressive disclosure](/ai-field-guide/concepts/progressive-disclosure/) |
+| Index notes | [Progressive Disclosure](/ai-field-guide/concepts/progressive-disclosure/) |
 
 Good notes for humans and good chunks for machines follow the same rules: self-contained, one idea, explicitly connected.
 

@@ -1,14 +1,14 @@
 ---
-title: "Exercise 0: Why not put everything in the system prompt?"
+title: "Exercise 0: Why Not Put Everything in the System Prompt?"
 description: Teach-back for Module 0. Explain to a skeptical manager why one giant system prompt fails as a product grows.
 sidebar:
   order: 1
 ---
 
-**Module:** [Module 0: Context is everything](/ai-field-guide/modules/00-context-is-everything/)
+**Module:** [Module 0: Context Is Everything](/ai-field-guide/modules/00-context-is-everything/)
 
 ## Prompt
-In 4–6 sentences, explain to a skeptical manager **why "just put everything in the system prompt" fails as an AI product grows.** Use the idea that the [Context window](/ai-field-guide/concepts/context-window/) is a scarce resource.
+In 4–6 sentences, explain to a skeptical manager **why "just put everything in the system prompt" fails as an AI product grows.** Use the idea that the [Context Window](/ai-field-guide/concepts/context-window/) is a scarce resource.
 
 ## My answer
 :::note[Not yet answered]
