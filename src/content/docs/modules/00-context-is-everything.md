@@ -27,7 +27,7 @@ For any piece of information an AI system might use, ask:
 
 | Mechanism | Loaded when | Who decides | Good for | Failure mode |
 |---|---|---|---|---|
-| [Rules](/ai-field-guide/concepts/rules/) (system prompt,[^1] CLAUDE.md) | Every turn | Developer or user, ahead of time | Rules that must always hold; project conventions | Bloat; conflicting rules followed unpredictably |
+| [Rules](/ai-field-guide/concepts/rules/) ([system prompt](/ai-field-guide/concepts/system-prompt/),[^1] CLAUDE.md) | Every turn | Developer or user, ahead of time | Rules that must always hold; project conventions | Bloat; conflicting rules followed unpredictably |
 | [Memory](/ai-field-guide/concepts/memory/) | An index always; details when relevant | The model writes it; retrieval or the model recalls it | Facts that build up over time | Going stale; wrong facts persisting; recalling the wrong thing |
 | [Skills](/ai-field-guide/concepts/skills/) | A one-line description always; full body on demand | The model, triggered by the task | Long procedures needed only sometimes | Not triggering, or triggering wrongly; the description is all the model sees |
 | [Tools and MCP](/ai-field-guide/concepts/tools-and-mcp/) | The definition always; results when called | The model, at run time | Actions and fresh data | Too many tools confuse selection; results can carry injected instructions |

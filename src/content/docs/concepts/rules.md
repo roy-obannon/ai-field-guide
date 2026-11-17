@@ -7,6 +7,8 @@ description: "Instructions loaded into every call: system prompts, CLAUDE.md, pr
 
 Good for constraints that must *always* hold: safety rules, project conventions, persona, output format.
 
+Most rules reach the model through its [System Prompt](/ai-field-guide/concepts/system-prompt/), which the application sends at the start of every request.
+
 ## Failure modes
 - **Bloat**: every line costs tokens and attention on every call ([Context Rot](/ai-field-guide/concepts/context-rot/)).
 - **Conflicts**: contradictory rules get followed unpredictably.
