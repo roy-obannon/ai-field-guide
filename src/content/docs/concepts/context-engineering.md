@@ -7,7 +7,7 @@ description: "Deciding what goes into the model's context window, when, and in w
 
 The beginning and early stages of interacting with LLMs focused on writing the best possible set of instructions for an LLM to follow. Understanding the answer to "how do I best phrase this?" is important for working with AI. Another name for this discipline is **prompt engineering**.
 
-> Prompt engineering is the practice of designing and refining the instructions given to a large language model (LLM) to improve the quality, accuracy, and relevance of its output.[^1]
+> Prompt engineering refers to methods for writing and organizing LLM instructions for optimal outcomes. . . .[^1]
 
 ## Why context engineering: a spicy allegory
 
@@ -28,7 +28,7 @@ A great ticket cannot save a cook who is missing an ingredient or buried in clut
 
 ## Context engineering
 
-> Context engineering is the discipline of designing and managing the complete informational environment surrounding a large language model (LLM), ensuring it has the right knowledge at the right time to reason and act reliably.[^2]
+> Context engineering refers to the set of strategies for curating and maintaining the optimal set of tokens (information) during LLM inference, including all the other information that may land there outside of the prompts.[^2]
 
 Context engineering asks and tries to answer two questions: "What does the model need to know?" and "What should the model not see?"
 
@@ -54,5 +54,5 @@ Its constraints: [Context Window](/ai-field-guide/concepts/context-window/) size
 - Core text: [Module 0: Context Is Everything](/ai-field-guide/modules/00-context-is-everything/)
 - The station in the allegory: [Context Window](/ai-field-guide/concepts/context-window/), [Context Rot](/ai-field-guide/concepts/context-rot/), [Progressive Disclosure](/ai-field-guide/concepts/progressive-disclosure/), and [Rules](/ai-field-guide/concepts/rules/)
 
-[^1]: Lakshay Nasa, ["Context Engineering vs. Prompt Engineering,"](https://datahub.com/blog/context-engineering-vs-prompt-engineering/#what-is-prompt-engineering) *DataHub*, April 20, 2026.
-[^2]: Nasa, ["Context Engineering vs. Prompt Engineering."](https://datahub.com/blog/context-engineering-vs-prompt-engineering/#what-is-context-engineering)
+[^1]: Prithvi Rajasekaran et al., ["Effective Context Engineering for AI Agents,"](https://www.anthropic.com/research/effective-context-engineering-for-ai-agents#context-engineering-vs-prompt-engineering) Anthropic, September 29, 2025.
+[^2]: Rajasekaran et al., ["Effective Context Engineering for AI Agents."](https://www.anthropic.com/research/effective-context-engineering-for-ai-agents#context-engineering-vs-prompt-engineering) For a formal, research-oriented treatment, see Lingrui Mei et al., ["A Survey of Context Engineering for Large Language Models,"](https://arxiv.org/abs/2507.13334) arXiv preprint, July 17, 2025.
