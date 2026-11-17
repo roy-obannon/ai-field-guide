@@ -21,6 +21,7 @@ These rules apply to everything written for this site.
 
 - Write in the owner's voice: professional and expert, but familiar and personal. The site is a personal undertaking, and readers (starting with the owner) should feel at home in it.
 - Minimize passive voice. Use it only when the actor is unknown, unimportant, or obvious and the thing acted upon is the real subject.
+- Do not end a sentence with a preposition: move the preposition earlier ("the model the answer depends on" → "the model on which the answer depends") or rephrase. The particle of a phrasal verb ("log in," "set up," "turn on," "figure out") is not a preposition and may end a sentence.
 
 ### Capitalization
 
@@ -31,6 +32,8 @@ These rules apply to everything written for this site.
 ### Punctuation and symbols
 
 - Use the Oxford comma.
+- Separate the items of a series with semicolons when any item contains its own comma. Use semicolons between all the items, including before the final "and" or "or" (the semicolon version of the Oxford comma). If the series becomes hard to read, turn it into a bulleted list.
+- Also use a semicolon to join two closely related independent clauses without a conjunction, including before a transitional word such as "however" or "therefore" (followed by a comma).
 - Use colons rather than em dashes.
 - Arrows (→), "vs.", "e.g.", and "i.e." are fine.
 - Type an em dash as `—` (or `---`). Never use `--`: the site renders it as an en dash.

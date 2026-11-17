@@ -9,7 +9,7 @@ sidebar:
 ## The core idea
 
 :::note[The one sentence to remember]
-A model has **no memory between calls** and exactly two sources of knowledge: its **weights**, frozen at training, and its **[context window](/ai-field-guide/concepts/context-window/)**, whatever is in front of it right now.
+A model has **no memory between calls** and exactly two sources of knowledge: its **weights**, frozen at training; and its **[context window](/ai-field-guide/concepts/context-window/)**, whatever is in front of it right now.
 :::
 
 Every "memory," "skill," "rule," "RAG pipeline," and "agent" is a strategy for putting **the right tokens into that window at the right time**, while keeping out the ones that cost money or distract the model. This discipline is called [Context Engineering](/ai-field-guide/concepts/context-engineering/).
@@ -27,15 +27,15 @@ For any piece of information an AI system might use, ask:
 
 | Mechanism | Loaded when | Who decides | Good for | Failure mode |
 |---|---|---|---|---|
-| [Rules](/ai-field-guide/concepts/rules/) (system prompt, CLAUDE.md) | Every turn | Developer or user, ahead of time | Rules that must always hold, project conventions | Bloat; conflicting rules followed unpredictably |
-| [Memory](/ai-field-guide/concepts/memory/) | An index always; details when relevant | The model writes it; retrieval or the model recalls it | Facts that build up over time | Going stale, wrong facts persisting, recalling the wrong thing |
+| [Rules](/ai-field-guide/concepts/rules/) (system prompt, CLAUDE.md) | Every turn | Developer or user, ahead of time | Rules that must always hold; project conventions | Bloat; conflicting rules followed unpredictably |
+| [Memory](/ai-field-guide/concepts/memory/) | An index always; details when relevant | The model writes it; retrieval or the model recalls it | Facts that build up over time | Going stale; wrong facts persisting; recalling the wrong thing |
 | [Skills](/ai-field-guide/concepts/skills/) | A one-line description always; full body on demand | The model, triggered by the task | Long procedures needed only sometimes | Not triggering, or triggering wrongly; the description is all the model sees |
 | [Tools and MCP](/ai-field-guide/concepts/tools-and-mcp/) | The definition always; results when called | The model, at run time | Actions and fresh data | Too many tools confuse selection; results can carry injected instructions |
 | [RAG](/ai-field-guide/concepts/rag/) | Each query | The pipeline, or the model in agentic RAG | Large knowledge bases | Retrieving the wrong passages and stating them confidently |
 
 ## The pattern underneath: progressive disclosure
 
-Skills, memory indexes, and tool search all share one structure: keep a **cheap pointer** in context and load the **expensive content** only when needed. See [Progressive Disclosure](/ai-field-guide/concepts/progressive-disclosure/). It's one of the strongest candidates for a principle worth standardizing on.
+Skills, memory indexes, and tool search all share one structure: keep a *cheap pointer* in context and load the *expensive content* only when needed ([Progressive Disclosure](/ai-field-guide/concepts/progressive-disclosure/)). It's one of the strongest candidates for a principle on which to standardize.
 
 :::note[Live specimen]
 When Claude saved my learning goal to memory, it wrote **one fact to one file** plus a **one-line pointer in an index**. The index loads every session; the file loads only when relevant. That's progressive disclosure applied to memory.
