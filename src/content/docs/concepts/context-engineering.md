@@ -47,7 +47,12 @@ Its tools:
 
 Its constraints: [Context Window](/ai-field-guide/concepts/context-window/) size, [Context Rot](/ai-field-guide/concepts/context-rot/), cost, [Prompt Caching](/ai-field-guide/concepts/prompt-caching/) order, and injection risk.
 
-Core text: [Module 0: Context Is Everything](/ai-field-guide/modules/00-context-is-everything/).
+---
+
+## Related
+
+- Core text: [Module 0: Context Is Everything](/ai-field-guide/modules/00-context-is-everything/)
+- The station in the allegory: [Context Window](/ai-field-guide/concepts/context-window/), [Context Rot](/ai-field-guide/concepts/context-rot/), [Progressive Disclosure](/ai-field-guide/concepts/progressive-disclosure/), and [Rules](/ai-field-guide/concepts/rules/)
 
 [^1]: Lakshay Nasa, ["Context Engineering vs. Prompt Engineering,"](https://datahub.com/blog/context-engineering-vs-prompt-engineering/#what-is-prompt-engineering) *DataHub*, April 20, 2026.
-[^2]: Lakshay Nasa, ["Context Engineering vs. Prompt Engineering,"](https://datahub.com/blog/context-engineering-vs-prompt-engineering/#what-is-context-engineering) *DataHub*, April 20, 2026.
+[^2]: Nasa, ["Context Engineering vs. Prompt Engineering."](https://datahub.com/blog/context-engineering-vs-prompt-engineering/#what-is-context-engineering)

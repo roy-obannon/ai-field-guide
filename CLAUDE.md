@@ -54,13 +54,23 @@ These rules apply to everything written for this site.
 
 ### Citations
 
-- Cite sources with footnotes. Each footnote gives the author, the title (in quotation marks, linked to the source), the publication (in italics), and the publication date:
+- Cite sources with footnotes, formatted in Chicago notes style.
+- The first note for a source is a full note: the author, the title (in quotation marks, linked to the source), the publication (in italics), and the publication date.
+- Every later note for the same source on the same page is a shortened note: the author's surname and the title only.
 
   ```md
-  [^1]: Lakshay Nasa, ["Context Engineering vs. Prompt Engineering,"](https://example.com/article) *DataHub*, April 20, 2026.
+  [^1]: Lakshay Nasa, ["Context Engineering vs. Prompt Engineering,"](https://example.com/article#section-one) *DataHub*, April 20, 2026.
+  [^2]: Nasa, ["Context Engineering vs. Prompt Engineering."](https://example.com/article#section-two)
   ```
 
+- A note ends with a period. When the note ends with a quoted title, the period goes inside the closing quotation mark (US style), so nothing follows the link.
+
 - When quoting one section of a long source, link to that section's anchor.
+- Write footnote definitions at the end of the file, with no heading. The build moves them to the end of the page under an automatic "Sources" heading and omits the "↩" return links.
+
+### End-of-page sections
+
+- End a page with a horizontal rule (`---`) and a "Related" section that lists internal links to related pages on this site. Keep sources out of "Related": they belong in the footnotes.
 
 ### Spelling
 
