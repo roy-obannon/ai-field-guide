@@ -30,7 +30,7 @@ Explain in plain language why reasoning models improved so much at math and code
 _Not answered yet._
 :::
 
-## 4. Opinion: is hallucination fixable?
+## 4. Opinion: Is hallucination fixable?
 Is [Hallucination](/ai-field-guide/concepts/hallucination/) a bug that will eventually be fixed, or a permanent property we engineer around? Take a side and give your strongest argument.
 
 :::note[My answer]
