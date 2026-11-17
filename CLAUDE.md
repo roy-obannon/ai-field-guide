@@ -27,7 +27,7 @@ These rules apply to everything written for this site.
 
 - Use title case for the titles of things: page titles, article and book titles, and planned module names. Follow Chicago style: capitalize major words, including short verbs such as "Is"; lowercase articles, coordinating conjunctions, and prepositions ("a," "and," "in," "of," "vs."); capitalize both parts of a hyphenated term ("Test-Time Compute").
 - Whenever text uses a title verbatim, including link text and sidebar labels, use the title-cased form. A term used as an ordinary noun in a sentence ("the model's context window") is not a title and stays lowercase.
-- Use sentence case for headings. When a heading contains a colon, keep the first word after the colon lowercase unless it is a proper noun ("The pattern underneath: progressive disclosure").
+- Use sentence case for headings. When a heading contains a colon, keep the first word after the colon lowercase unless it is a proper noun ("The pattern underneath: progressive disclosure"). Exception: after a label that numbers or names a section ("Part A:", "Step 2:"), capitalize the first word, because what follows is the section's title ("Part A: How the machine works").
 
 ### Punctuation and symbols
 
